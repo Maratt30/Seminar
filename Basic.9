@@ -1,0 +1,17 @@
+rates = {
+    "USD": {"EUR": 0.91, "AZN": 1.7},
+    "EUR": {"USD": 1.1, "AZN": 1.87},
+    "AZN": {"USD": 0.59, "EUR": 0.53}
+}
+
+try:
+    amount = float(input("Məbləğ: "))
+    src = input("Mənbə valyuta (USD, EUR, AZN): ").upper()
+    tgt = input("Hədəf valyuta (USD, EUR, AZN): ").upper()
+
+    if src in rates and tgt in rates[src]:
+        print(f"{amount} {src} = {amount * rates[src][tgt]:.2f} {tgt}")
+    else:
+        print("Xəta: Dəstəklənməyən valyuta!")
+except ValueError:
+    print("Xəta: Məbləğ rəqəm olmalıdır!")
