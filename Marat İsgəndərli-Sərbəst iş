@@ -1,0 +1,165 @@
+import json
+
+weather_data = []
+
+def welcome_screen():
+   print("=== Simple Weather Logger ===")
+
+def show_menu():
+   print("""
+1. Add new weather record
+2. View all records
+3. Search record by ID
+4. Update a record
+5. Delete a record
+6. Show summary statistics
+7. Save records to file
+8. Load records from file
+9. Sort records by temperature
+10. Count entries (recursive)
+11. Help / Instructions
+12. Clear all data
+13. Exit
+""")
+
+def add_record():
+   try:
+       record = {}
+       record['id'] = input("Enter record ID: ")
+       record['date'] = input("Enter date (YYYY-MM-DD): ")
+       record['temperature'] = float(input("Enter temperature: "))
+       record['humidity'] = float(input("Enter humidity: "))
+       weather_data.append(record)
+       print("Record added successfully.")
+   except ValueError:
+       print("Invalid input!")
+
+def view_records():
+   if not weather_data:
+       print("No records available.")
+   else:
+       for rec in weather_data:
+           print(f"ID: {rec['id']}, Date: {rec['date']}, Temp: {rec['temperature']}°C, Humidity: {rec['humidity']}%")
+
+def search_record():
+   record_id = input("Enter ID to search: ")
+   for rec in weather_data:
+       if rec['id'] == record_id:
+           print(rec)
+           return
+   print("Record not found.")
+
+def update_record():
+   record_id = input("Enter ID to update: ")
+   for rec in weather_data:
+       if rec['id'] == record_id:
+           try:
+               rec['date'] = input("Enter new date: ")
+               rec['temperature'] = float(input("Enter new temperature: "))
+               rec['humidity'] = float(input("Enter new humidity: "))
+               print("Record updated.")
+               return
+           except ValueError:
+               print("Invalid input.")
+               return
+   print("Record not found.")
+
+def delete_record():
+   record_id = input("Enter ID to delete: ")
+   for rec in weather_data:
+       if rec['id'] == record_id:
+           weather_data.remove(rec)
+           print("Record deleted.")
+           return
+   print("Record not found.")
+
+def summary_stats():
+   if not weather_data:
+       print("No records to analyze.")
+       return
+   avg_temp = sum(rec['temperature'] for rec in weather_data) / len(weather_data)
+   avg_humidity = sum(rec['humidity'] for rec in weather_data) / len(weather_data)
+   print(f"Average Temp: {avg_temp:.2f}°C, Average Humidity: {avg_humidity:.2f}%")
+
+def save_to_file():
+   try:
+       with open("weather_data.json", "w") as f:
+           json.dump(weather_data, f)
+       print("Data saved to file.")
+   except Exception as e:
+       print("Error saving file:", e)
+
+def load_from_file():
+   global weather_data
+   try:
+       with open("weather_data.json", "r") as f:
+           weather_data = json.load(f)
+       print("Data loaded from file.")
+   except FileNotFoundError:
+       print("File not found.")
+   except Exception as e:
+       print("Error loading file:", e)
+
+def sort_records():
+   weather_data.sort(key=lambda x: x['temperature'])
+   print("Records sorted by temperature.")
+
+def count_entries(index=0):
+   if index == len(weather_data):
+       return 0
+   return 1 + count_entries(index + 1)
+
+def show_help():
+   print("This program allows you to log weather data such as temperature and humidity.
+"
+         "You can add, view, update, delete, search, sort, and save/load data.
+")
+
+def clear_data():
+   confirm = input("Are you sure you want to delete all data? (yes/no): ")
+   if confirm.lower() == "yes":
+       weather_data.clear()
+       print("All data cleared.")
+   else:
+       print("Operation canceled.")
+
+def main():
+   welcome_screen()
+   while True:
+       show_menu()
+       try:
+           choice = int(input("Choose an option: "))
+           if choice == 1:
+               add_record()
+           elif choice == 2:
+               view_records()
+           elif choice == 3:
+               search_record()
+           elif choice == 4:
+               update_record()
+           elif choice == 5:
+               delete_record()
+           elif choice == 6:
+               summary_stats()
+           elif choice == 7:
+               save_to_file()
+           elif choice == 8:
+               load_from_file()
+           elif choice == 9:
+               sort_records()
+           elif choice == 10:
+               print("Total entries:", count_entries())
+           elif choice == 11:
+               show_help()
+           elif choice == 12:
+               clear_data()
+           elif choice == 13:
+               print("Exiting program.")
+               break
+           else:
+               print("Invalid choice.")
+       except ValueError:
+           print("Please enter a valid number.")
+
+if __name__ == "__main__":
+   main()
