@@ -1,6 +1,140 @@
-a=input("Write your input value:")
-if a=='':
-    print("None")
-    print("No input provided")
-else:
-    print("Your input value is:",a)
+1. What is the purpose of HTML in web development?
+    HTML is used to create the structure and content of web pages. It defines elements such as headings, paragraphs, images, links, and forms.
+2. Explain the difference between semantic and non-semantic HTML tags.
+    Semantic tags describe the meaning of content (e.g., <header>, <footer>), while non-semantic tags (<div>, <span>) do not provide information about the content.
+3. What is the Document Object Model (DOM)?
+    The DOM is a tree-like representation of an HTML document that allows JavaScript to access and modify page elements dynamically.
+4. What is the difference between <div> and <span> elements?
+    <div> is a block-level element, while <span> is an inline element used within a line of text.
+5. Explain the purpose of the <form> element.
+    The <form> element is used to collect user input and send data to a server.
+6. What are HTML attributes? Give examples.
+    Attributes provide additional information about HTML elements. Examples include id, class, href, and src.
+7. Explain the difference between absolute and relative URLs.
+    An absolute URL contains the full web address, while a relative URL specifies a path relative to the current page.
+8. What is the purpose of the <meta> tag?
+    The <meta> tag provides information about the webpage, such as character encoding and page description.
+9. What are HTML5 semantic elements and why are they important?
+    Semantic elements describe the purpose of content and improve accessibility and SEO.
+10. Explain the difference between GET and POST methods.
+    GET sends data through the URL, while POST sends data in the request body.
+11. What is CSS and how is it applied to a webpage?
+    CSS is used to style web pages. It can be applied inline, internally, or through external files.
+12. Explain the CSS box model.
+    The CSS box model consists of content, padding, border, and margin.
+13. What is the difference between margin and padding?
+    Margin creates space outside an element, while padding creates space inside the element.
+14. Explain CSS specificity.
+    Specificity determines which CSS rule is applied when multiple rules target the same element.
+15. What is the difference between class selectors and ID selectors?
+    Classes can be used multiple times, while IDs should be unique on a page.
+16. What are pseudo-classes in CSS?
+    Pseudo-classes define special states of elements, such as :hover and :focus.
+17. What are pseudo-elements in CSS?
+    Pseudo-elements style specific parts of an element, such as ::before and ::after.
+18. Explain the purpose of the position property.
+    The position property controls how elements are placed on a webpage.
+19. What is the difference between relative, absolute, fixed, and sticky positioning?
+    Relative positions an element from its normal place, absolute positions it relative to a parent, fixed stays on screen while scrolling, and sticky switches between relative and fixed behavior.
+20. Explain how Flexbox works.
+    Flexbox is a layout system that helps align and distribute items inside a container.
+21. What are the main properties of a Flex container?
+    Common properties include flex-direction, justify-content, align-items, flex-wrap, and gap.
+22. Explain CSS Grid and its advantages.
+    CSS Grid is a two-dimensional layout system that makes creating complex layouts easier.
+23. What are media queries and why are they used?
+    Media queries apply different styles based on screen size or device characteristics.
+24. What is responsive web design?
+    Responsive web design ensures websites work well on different screen sizes and devices.
+25. Explain the difference between display: none and visibility: hidden.
+    display:none removes the element completely, while visibility:hidden hides it but keeps its space.
+26. What is the purpose of CSS transitions?
+    Transitions create smooth changes between CSS property values.
+27. What is the purpose of CSS animations?
+    Animations allow elements to move or change styles over time.
+28. Explain the z-index property.
+    z-index controls the stacking order of overlapping elements.
+29. What is Bootstrap and why is it used?
+    Bootstrap is a popular framework that provides ready-made responsive design components.
+30. Explain accessibility in web development.
+    Accessibility ensures websites can be used by people with disabilities.
+31. What is JavaScript and where is it executed?
+    JavaScript is a programming language for web interactivity. It runs in browsers and on servers.
+32. Explain the difference between let, const, and var.
+    let allows reassignment, const creates constants, and var is the older variable declaration method.
+33. What are JavaScript data types?
+    String, Number, Boolean, Undefined, Null, Object, BigInt, and Symbol.
+34. Explain type conversion in JavaScript.
+    Type conversion changes a value from one data type to another.
+35. What is the difference between == and ===?
+    == compares values with type conversion, while === compares both value and type.
+36. Explain logical operators in JavaScript.
+    The main logical operators are && (AND), || (OR), and ! (NOT).
+37. What are conditional statements?
+    Conditional statements execute different code depending on whether a condition is true or false.
+38. Explain the purpose of loops in JavaScript.
+    Loops repeat a block of code multiple times.
+39. Compare for, while, and do…while loops.
+    for is used when the number of iterations is known, while runs while a condition is true, and do...while runs at least once.
+40. What are functions in JavaScript?
+    Functions are reusable blocks of code designed to perform specific tasks.
+41. Explain the concept of scope.
+    Scope determines where variables can be accessed in a program.
+42. What is the difference between local and global variables?
+    Local variables exist within a function or block, while global variables are accessible throughout the program.
+43. What are arrow functions?
+    Arrow functions are a shorter syntax for writing functions using =>.
+44. Explain function parameters and return values.
+    Parameters are inputs to a function, and return values are outputs from a function.
+45. What are arrays in JavaScript?
+    Arrays are used to store multiple values in a single variable.
+46. Explain common array methods.
+    Examples include push(), pop(), shift(), unshift(), map(), and filter().
+47. What are JavaScript objects?
+    Objects store data as key-value pairs.
+48. Explain the difference between arrays and objects.
+    Arrays use indexes, while objects use named keys.
+49. What is JSON and why is it used?
+    JSON is a lightweight data format used for storing and exchanging information.
+50. Explain event handling in JavaScript.
+    Event handling allows JavaScript to respond to user actions like clicks and key presses.
+51. What is an event listener?
+    An event listener waits for a specific event and executes code when the event occurs.
+52. Explain event bubbling.
+    Event bubbling is the process where events move from a child element to its parent elements.
+53. What is DOM manipulation?
+    DOM manipulation involves modifying HTML elements using JavaScript.
+54. Explain the difference between innerHTML and textContent.
+    innerHTML handles HTML content, while textContent handles only plain text.
+55. What is form validation?
+    Form validation checks whether user input meets required conditions.
+56. Explain client-side validation and server-side validation.
+    Client-side validation occurs in the browser, while server-side validation occurs on the server.
+57. What is localStorage?
+    localStorage stores data in the browser until it is manually removed.
+58. What is sessionStorage?
+    sessionStorage stores data only during the current browser session.
+59. What is asynchronous programming?
+    Asynchronous programming allows tasks to run without blocking other operations.
+60. Explain callbacks in JavaScript.
+    A callback is a function passed to another function and executed later.
+61. What is a Promise?
+    A Promise represents the future result of an asynchronous operation.
+62. Explain async/await.
+    async/await provides a cleaner way to work with asynchronous code and Promises.
+63. What is an API?
+    An API allows different software applications to communicate and exchange data.
+64. What is the Fetch API?
+    The Fetch API is used to send HTTP requests and receive data from servers.
+65. Explain HTTP status codes.
+    HTTP status codes indicate the result of a request, such as 200 (Success) or 404 (Not Found).
+66. What is the difference between frontend and backend development?
+    Frontend focuses on the user interface, while backend handles server-side logic and databases.
+67. Explain the concept of Single Page Applications (SPA).
+    An SPA loads one page and updates content dynamically without reloading the entire page.
+68. What are the main advantages of modular JavaScript?
+    Modular JavaScript improves code organization, reusability, maintenance, and collaboration.
+69. What is Cross-Site Scripting (XSS)?
+    XSS is a security vulnerability where attackers inject malicious scripts into web pages.
+70. Explain the importance of website performance optimization.
+    Performance optimization improves loading speed, user experience, SEO rankings, and overall website efficiency.
