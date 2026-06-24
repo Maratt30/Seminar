@@ -1,11 +1,278 @@
-a=int(input())
-n=input()
-b=int(input())
-if n=='+':
-    print(a+b)
-elif n=='-':
-    print(a-b)
-elif n=='*':
-    print(a*b)
-else:
-    print(a/b)
+1. What is the purpose of HTML in web development?
+
+HTML (HyperText Markup Language) is the standard markup language used to create the structure of web pages. It defines elements such as headings, paragraphs, images, links, and forms. HTML serves as the foundation of every website.
+
+2. Explain the difference between semantic and non-semantic HTML tags.
+
+Semantic HTML tags clearly describe the meaning of their content, such as <header>, <footer>, and <article>. Non-semantic tags like <div> and <span> do not provide information about the content they contain. Semantic tags improve readability, accessibility, and SEO.
+
+3. What is the Document Object Model (DOM)?
+
+The Document Object Model (DOM) is a tree-like representation of an HTML document. It allows JavaScript to access, modify, and update webpage content dynamically. Through the DOM, developers can create interactive web applications.
+
+4. What is the difference between <div> and <span> elements?
+
+The <div> element is a block-level container that starts on a new line and takes up the full available width. The <span> element is an inline container that only takes up the necessary space within a line. Both are commonly used for styling and grouping content.
+
+5. Explain the purpose of the <form> element.
+
+The <form> element is used to collect input from users and send it to a server for processing. It can contain text fields, buttons, checkboxes, and other input controls. Forms are commonly used for login pages, registration pages, and surveys.
+
+6. What are HTML attributes? Give examples.
+
+HTML attributes provide additional information about HTML elements. They are placed inside the opening tag and help define element behavior or appearance. Examples include id, class, href, src, and alt.
+
+7. Explain the difference between absolute and relative URLs.
+
+An absolute URL contains the complete web address, including the protocol and domain name. A relative URL specifies a path relative to the current page location. Relative URLs are often used within the same website.
+
+8. What is the purpose of the <meta> tag?
+
+The <meta> tag provides metadata about a webpage that is not directly displayed on the page. It can define character encoding, page descriptions, keywords, and viewport settings. Meta tags are important for SEO and browser compatibility.
+
+9. What are HTML5 semantic elements and why are they important?
+
+HTML5 semantic elements describe the purpose of the content they contain. Examples include <header>, <nav>, <main>, and <footer>. They improve website accessibility, code readability, and search engine optimization.
+
+10. Explain the difference between GET and POST methods.
+
+GET and POST are HTTP methods used to send data between a client and a server. GET sends data through the URL and is mainly used for retrieving information. POST sends data in the request body and is more secure for submitting sensitive information.
+11. What is CSS and how is it applied to a webpage?
+
+CSS (Cascading Style Sheets) is used to control the appearance and layout of web pages. It allows developers to change colors, fonts, spacing, and positioning of elements. CSS can be applied inline, internally within a <style> tag, or through an external stylesheet.
+
+12. Explain the CSS box model.
+
+The CSS box model describes how elements are displayed on a webpage. It consists of four parts: content, padding, border, and margin. Understanding the box model is important for controlling spacing and layout.
+
+13. What is the difference between margin and padding?
+
+Margin is the space outside an element’s border, creating distance between elements. Padding is the space inside the border, between the content and the border. Both are used to improve layout and design.
+
+14. Explain CSS specificity.
+
+CSS specificity is the method browsers use to determine which style rule should be applied when multiple rules target the same element. More specific selectors have higher priority. ID selectors are generally more specific than class selectors.
+
+15. What is the difference between class selectors and ID selectors?
+
+A class selector can be applied to multiple elements on a webpage. An ID selector should be unique and used for only one element. Classes are defined with a dot (.), while IDs use a hash (#).
+
+16. What are pseudo-classes in CSS?
+
+Pseudo-classes define special states of an element. Examples include :hover, :focus, and :active. They allow developers to apply styles based on user interactions.
+
+17. What are pseudo-elements in CSS?
+
+Pseudo-elements allow developers to style specific parts of an element. Common examples include ::before, ::after, and ::first-letter. They help create visual effects without adding extra HTML elements.
+
+18. Explain the purpose of the position property.
+
+The position property determines how an element is positioned on a webpage. It can be set to values such as static, relative, absolute, fixed, or sticky. This property is essential for creating complex layouts.
+
+19. What is the difference between relative, absolute, fixed, and sticky positioning?
+
+Relative positioning moves an element relative to its normal position. Absolute positioning places an element relative to its nearest positioned ancestor. Fixed positioning keeps an element in the same place on the screen, while sticky positioning changes behavior based on scrolling.
+
+20. Explain how Flexbox works.
+
+Flexbox is a CSS layout model designed to align and distribute items efficiently within a container. It makes it easier to create responsive layouts without using floats. Flexbox provides powerful alignment and spacing options.
+
+21. What are the main properties of a Flex container?
+
+Important Flexbox properties include flex-direction, justify-content, align-items, flex-wrap, and gap. These properties control the direction, alignment, and spacing of items. They help create flexible and responsive layouts.
+
+22. Explain CSS Grid and its advantages.
+
+CSS Grid is a two-dimensional layout system that works with rows and columns. It provides precise control over webpage layouts. Grid makes it easier to design complex and responsive interfaces.
+
+23. What are media queries and why are they used?
+
+Media queries allow CSS styles to change based on screen size, resolution, or device type. They are a key part of responsive web design. Media queries help websites look good on phones, tablets, and desktops.
+
+24. What is responsive web design?
+
+Responsive web design is an approach that ensures websites adapt to different screen sizes and devices. It improves usability and accessibility. Responsive websites provide a better experience for all users.
+
+25. Explain the difference between display: none and visibility: hidden.
+
+display: none completely removes the element from the page layout. visibility: hidden hides the element but keeps its allocated space. The choice depends on whether the layout should change.
+
+26. What is the purpose of CSS transitions?
+
+CSS transitions create smooth changes between different property values. They improve user experience by making animations feel natural. Transitions are commonly used for hover effects and interactive elements.
+
+27. What is the purpose of CSS animations?
+
+CSS animations allow elements to move or change styles over time. They use keyframes to define animation stages. Animations can enhance user engagement and visual appeal.
+
+28. Explain the z-index property.
+
+The z-index property controls the stacking order of overlapping elements. Elements with higher values appear above those with lower values. It only works on positioned elements.
+
+29. What is Bootstrap and why is it used?
+
+Bootstrap is a popular front-end framework that provides pre-built components and responsive design tools. It helps developers create websites more quickly. Bootstrap also ensures consistency across different browsers and devices.
+
+30. Explain accessibility in web development.
+
+Accessibility refers to designing websites that can be used by everyone, including people with disabilities. It includes features such as keyboard navigation, screen reader support, and proper color contrast. Accessibility improves usability and inclusiveness.
+31. What is JavaScript and where is it executed?
+
+JavaScript is a programming language used to make web pages interactive and dynamic. It can respond to user actions, update content, and communicate with servers. JavaScript is mainly executed in web browsers, but it can also run on servers using environments such as Node.js.
+
+32. Explain the difference between let, const, and var.
+
+let, const, and var are used to declare variables in JavaScript. let allows values to be changed, while const creates variables whose values cannot be reassigned. var is the older way of declaring variables and has different scope behavior.
+
+33. What are JavaScript data types?
+
+JavaScript supports several data types, including String, Number, Boolean, Undefined, Null, Object, BigInt, and Symbol. Data types determine what kind of value a variable can store. Understanding them is essential for writing correct programs.
+
+34. Explain type conversion in JavaScript.
+
+Type conversion is the process of changing a value from one data type to another. JavaScript can perform conversions automatically or developers can do it manually using functions like Number() and String(). Type conversion is useful when working with user input and calculations.
+
+35. What is the difference between == and ===?
+
+The == operator compares values after performing type conversion if necessary. The === operator compares both the value and the data type without conversion. Using === is generally recommended because it produces more predictable results.
+
+36. Explain logical operators in JavaScript.
+
+Logical operators are used to combine or modify conditions. The main logical operators are && (AND), || (OR), and ! (NOT). They are commonly used in conditional statements and decision-making processes.
+
+37. What are conditional statements?
+
+Conditional statements allow a program to make decisions based on specific conditions. Examples include if, else if, else, and switch. They help control the flow of a program.
+
+38. Explain the purpose of loops in JavaScript.
+
+Loops are used to repeat a block of code multiple times. They reduce code duplication and make programs more efficient. Common loops include for, while, and do...while.
+
+39. Compare for, while, and do…while loops.
+
+A for loop is commonly used when the number of iterations is known. A while loop runs as long as a condition remains true. A do...while loop executes at least once before checking the condition.
+
+40. What are functions in JavaScript?
+
+Functions are reusable blocks of code that perform specific tasks. They help organize programs and reduce repetition. Functions can accept parameters and return values.
+
+41. Explain the concept of scope.
+
+Scope determines where variables and functions can be accessed within a program. Variables may have global scope or local scope. Proper use of scope helps avoid conflicts and errors.
+
+42. What is the difference between local and global variables?
+
+Local variables are declared inside a function or block and can only be accessed there. Global variables are declared outside functions and can be accessed throughout the program. Using local variables helps improve code security and organization.
+
+43. What are arrow functions?
+
+Arrow functions are a shorter way to write functions in JavaScript. They use the => syntax and often make code more readable. Arrow functions are commonly used in modern JavaScript development.
+
+44. Explain function parameters and return values.
+
+Parameters are values passed into a function when it is called. Return values are the results sent back by the function after execution. They allow functions to process data and provide outputs.
+
+45. What are arrays in JavaScript?
+
+Arrays are data structures used to store multiple values in a single variable. Each item in an array has an index that starts from zero. Arrays are useful for managing lists of related data.
+
+46. Explain common array methods.
+
+Common array methods include push() for adding elements, pop() for removing elements, and filter() for creating filtered arrays. Methods such as map() and forEach() are used for processing array data. These methods simplify array manipulation.
+
+47. What are JavaScript objects?
+
+Objects are collections of related data stored as key-value pairs. They are used to represent real-world entities and complex data structures. Objects are one of the most important features of JavaScript.
+
+48. Explain the difference between arrays and objects.
+
+Arrays store ordered collections of values using numeric indexes. Objects store data using named properties called keys. Arrays are best for lists, while objects are better for structured information.
+
+49. What is JSON and why is it used?
+
+JSON (JavaScript Object Notation) is a lightweight format for storing and exchanging data. It is easy for humans to read and for machines to process. JSON is widely used in APIs and web applications.
+
+50. Explain event handling in JavaScript.
+
+Event handling allows JavaScript to respond to user interactions such as clicks, keyboard input, and mouse movements. Events make web pages interactive and dynamic. Developers use event handlers to define actions that occur when events happen.
+
+⸻
+
+51. What is an event listener?
+
+An event listener is a function that waits for a specific event to occur on an element. When the event happens, the listener executes a predefined action. Event listeners are commonly added using the addEventListener() method.
+
+52. Explain event bubbling.
+
+Event bubbling is a process where an event starts on the target element and then propagates upward through its parent elements. It allows parent elements to respond to events triggered by child elements. This behavior is useful for event delegation.
+
+53. What is DOM manipulation?
+
+DOM manipulation is the process of modifying HTML elements using JavaScript. Developers can add, remove, update, or style elements dynamically. This allows web pages to change without being reloaded.
+
+54. Explain the difference between innerHTML and textContent.
+
+innerHTML allows developers to read or modify HTML content, including tags. textContent works only with plain text and ignores HTML tags. Using textContent is generally safer when displaying user input.
+
+55. What is form validation?
+
+Form validation is the process of checking whether user input meets specific requirements before submission. It helps prevent invalid or incomplete data from being sent. Validation improves both security and user experience.
+
+56. Explain client-side validation and server-side validation.
+
+Client-side validation is performed in the user’s browser before data is sent to the server. Server-side validation occurs on the server after submission and provides stronger security. Most applications use both methods together.
+
+57. What is localStorage?
+
+localStorage is a browser feature that stores data permanently on a user’s device. The data remains available even after the browser is closed. It is commonly used for saving user preferences and settings.
+
+58. What is sessionStorage?
+
+sessionStorage stores data only for the duration of a browser session. Once the browser tab is closed, the stored data is removed. It is useful for temporary information that should not persist.
+
+59. What is asynchronous programming?
+
+Asynchronous programming allows tasks to run without blocking the execution of other code. It is especially useful for operations such as network requests and file loading. This approach improves application performance and responsiveness.
+
+60. Explain callbacks in JavaScript.
+
+A callback is a function passed as an argument to another function. It is executed after a specific task has been completed. Callbacks are commonly used in asynchronous programming.
+61. What is a Promise?
+
+A Promise is an object that represents the eventual result of an asynchronous operation. It can be in one of three states: pending, fulfilled, or rejected. Promises make asynchronous code easier to read and manage compared to nested callbacks.
+
+62. Explain async/await.
+
+async and await are features built on top of Promises that simplify asynchronous programming. The async keyword declares a function that returns a Promise, while await pauses execution until the Promise is resolved. This makes asynchronous code look more like regular synchronous code.
+
+63. What is an API?
+
+An API (Application Programming Interface) is a set of rules that allows different software applications to communicate with each other. APIs enable systems to exchange data and functionality without exposing internal implementation details. They are widely used in web and mobile applications.
+
+64. What is the Fetch API?
+
+The Fetch API is a modern JavaScript interface for making HTTP requests. It allows developers to send requests to servers and handle responses using Promises. Fetch is commonly used to retrieve data from APIs and update web pages dynamically.
+
+65. Explain HTTP status codes.
+
+HTTP status codes are numerical responses sent by a server to indicate the result of a request. For example, 200 means the request was successful, 404 means the requested resource was not found, and 500 indicates a server error. These codes help developers understand and troubleshoot communication between clients and servers.
+
+66. What is the difference between frontend and backend development?
+
+Frontend development focuses on the visual and interactive parts of a website that users see and use directly. Backend development handles server-side logic, databases, authentication, and data processing. Together, frontend and backend create complete web applications.
+
+67. Explain the concept of Single Page Applications (SPA).
+
+A Single Page Application (SPA) loads a single HTML page and updates content dynamically without reloading the entire page. This creates a faster and smoother user experience. Popular frameworks such as React, Angular, and Vue are often used to build SPAs.
+
+68. What are the main advantages of modular JavaScript?
+
+Modular JavaScript divides code into separate, reusable modules. This improves code organization, readability, maintainability, and scalability. It also allows multiple developers to work on different parts of a project more efficiently.
+
+69. What is Cross-Site Scripting (XSS)?
+
+Cross-Site Scripting (XSS) is a security vulnerability that allows attackers to inject malicious scripts into web pages. These scripts can steal user information, modify content, or perform unauthorized actions. Proper input validation and output encoding help prevent XSS attacks.
+
+70. Explain the importance of website performance optimization.
+
+Website performance optimization improves loading speed, responsiveness, and overall user experience. Faster websites reduce bounce rates and improve search engine rankings. Optimization techniques include image compression, caching, code minification, and reducing unnecessary network requests.
